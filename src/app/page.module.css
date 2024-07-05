@@ -1,4 +1,5 @@
 .homeCard {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,3 +35,24 @@
 .button:active {
   background-color: #06418d;
 }
+
+@media (max-width: 600px) {
+  .homeCard {
+    width: 90vw;
+  }
+
+  .logoImage {
+    width: 80vw;
+    height: 20vh;
+  }
+
+  .buttonHome {
+    width: 50vw;
+  }
+
+  .buttonHome:hover {
+    width: 60vw;
+    background-color: #006eff;
+  }
+}
+  
