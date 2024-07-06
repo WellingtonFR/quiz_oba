@@ -23,7 +23,7 @@ const questions: Question[] = [
   },
 ];
 
-export default function Questions() {
+export default function Questoes() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [selectedOption, setSelectedOption] = useState('');
@@ -62,7 +62,7 @@ export default function Questions() {
 
     if (isLastQuestion) {
       alert('Desafio concluído, aguarde o resultado');
-      router.push('/');
+      router.push('/resultado');
     } else {
       setCurrentQuestion(currentQuestion + 1);
     }

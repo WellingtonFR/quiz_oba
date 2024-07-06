@@ -10,11 +10,17 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.homeCard}>
-        <Image src="/images/logo_oba.png"  width={400} height={222} alt="Picture of the author"className={styles.logoImage}/>
+        <Image
+          src="/images/logo_oba.png"
+          width={400}
+          height={222}
+          alt="Picture of the author"
+          className={styles.logoImage}
+        />
 
         <button
           className={styles.buttonHome}
-          onClick={() => router.push('/questions')}
+          onClick={() => router.push('/questoes')}
         >
           Iniciar desafio
         </button>
